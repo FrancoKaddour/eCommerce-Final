@@ -1,0 +1,444 @@
+body {
+  margin: 0;
+}
+
+main {
+  background: linear-gradient(
+    45deg,
+    #003400,
+    #006414,
+    #009929,
+    #5ccb5f,
+    #98ff96
+  );
+  position: relative;
+}
+header {
+  background: linear-gradient(45deg, #009929, #5ccb5f, #98ff96);
+  position: relative;
+}
+
+.sub-header {
+  position: relative;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+}
+
+.contenedor-header {
+  position: relative;
+  width: 100%;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  padding: 0px 10px;
+  width: 100%;
+  z-index: 1000; /* Asegúrate de que el header tenga un z-index más alto que nav-header */
+}
+
+.logo img {
+  width: 140px;
+  height: 120px;
+  transition: all 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.buscador {
+  margin-right: 95px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.buscador input {
+  width: 650px;
+  padding: 18px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+.buscador button {
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  background-color: #5ccb5f;
+  position: absolute;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 25px;
+  cursor: pointer;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.buscador button:hover {
+  background-color: #006414;
+  border: #006414;
+}
+
+.buscador i {
+  font-size: 20px;
+}
+
+.carrito-container {
+  position: relative;
+}
+
+.carrito-header {
+  color: #fff;
+  cursor: pointer;
+  border: #5ccb5f;
+  border-radius: 15px;
+  background-color: #5ccb5f;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carrito-header:hover {
+  background-color: #006414;
+  border: #006414;
+}
+.carrito-header a {
+  margin-top: 10px;
+}
+
+.carrito-header i {
+  font-size: 30px;
+}
+
+.carrito-content {
+  border-radius: 7px;
+
+  margin-top: 15px;
+  display: none; /* Oculta el contenido del carrito por defecto */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 500px;
+  height: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegúrate de que la tarjeta tenga un z-index más alto */
+}
+
+.carrito-content h4 {
+  font-weight: 500;
+  color: #5ccb5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.carrito-content p {
+  margin: 0 0 10px 0;
+}
+
+.carrito-content .checkout-button {
+  background-color: #5ccb5f;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.carrito-content.show {
+  display: block; /* Muestra el contenido del carrito cuando se agrega la clase 'show' */
+}
+
+.nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 999;
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 140px; /* Altura del header */
+}
+
+.nav-header a {
+  font-size: large;
+  padding-right: 50px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s;
+  font-weight: 400;
+
+  font-size: 1.4em;
+}
+
+.nav-header a:hover {
+  transform: scale(1.2);
+  color: #006414;
+}
+/*------------------------------------------------SLIDER-----------------------------------------------------------------*/
+
+.contenedor-carrusel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px;
+}
+
+.carrusel {
+  width: 300% !important;
+  height: 100%;
+  display: flex;
+}
+
+#slider {
+  display: flex !important; /* Forzar display a flex */
+}
+
+.slider-section {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+.slider-section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* --------------------------------------------------------TIRA---------------------------------------------------------------*/
+
+.contenedor-tira {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+#slider {
+  width: 100%;
+  display: block;
+}
+#info-section {
+  background: #fff;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-bottom: 60px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px; /* Añade espacio entre filas */
+}
+.info-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.info-text p {
+  margin: 0;
+  color: black;
+  font-size: larger;
+}
+
+/* ------------------------------------------------------FOOTER---------------------------------------------------------------*/
+.margen-footer {
+  height: 200px;
+}
+
+.footer-page {
+  margin: 0;
+  background: #fff;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.redes-sociales,
+.nav-footer-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+.footer-page .redes-sociales li,
+.footer-page .nav-footer-page li {
+  list-style: none;
+  margin: 0 30px;
+}
+.footer-page .redes-sociales li a {
+  font-size: 2.7em;
+  color: #009929;
+
+  margin: 0 30px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.footer-page .redes-sociales li a:hover {
+  color: #003400;
+  transform: translateY(-10px);
+}
+.footer-page .nav-footer-page li a {
+  font-weight: 500;
+
+  font-size: 1.4em;
+  color: #009929;
+
+  margin: 0 30px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+  transition: 0.5s;
+}
+.footer-page .nav-footer-page li a:hover {
+  transform: translateY(-10px);
+  color: #003400;
+}
+
+.sub-footer-page {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 38px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 0;
+  z-index: 1000; /* Ajusta el valor del índice z si es necesario */
+}
+.footer-page div p {
+  color: white;
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+.footer-page .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/wave.png);
+  background-size: 1000px 100px;
+}
+.footer-page .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+.footer-page .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+.footer-page .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave_03 3s linear infinite;
+}
+.footer-page .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_04 3s linear infinite;
+}
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+/*------------------------------------------------productos-----------------------------------------------------------------*/
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff !important;
+  font-weight: 400 !important;
+}
+.card.carta {
+  box-shadow: 2px 2px 7px;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 450px;
+}
+
+.card.carta img {
+  height: 300px; /* Ajusta el tamaño de la imagen */
+  object-fit: cover; /* Esto asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body button {
+  border: none;
+  background: #5ccb5f;
+}
+
+.card-body button:hover {
+  background-color: #006414;
+  border: #006414;
+}

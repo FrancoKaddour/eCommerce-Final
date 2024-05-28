@@ -1,0 +1,38 @@
+[
+  {
+    "precio": 4000,
+    "id": 1,
+    "title": "Blunt XL 4u.",
+    "thumbnailUrl": "blunt.jpg"
+  },
+  {
+    "precio": 85000,
+    "id": 2,
+    "title": "Vaporizador",
+    "thumbnailUrl": "vaporizador.jpg"
+  },
+  {
+    "precio": 50000,
+    "id": 3,
+    "title": "Bong",
+    "thumbnailUrl": "bong.png"
+  },
+  {
+    "precio": 30000,
+    "id": 4,
+    "title": "Sustrato Organico 70L",
+    "thumbnailUrl": "sustrato.jpg"
+  },
+  {
+    "precio": 1200000,
+    "id": 5,
+    "title": "Panel Led SunFlash",
+    "thumbnailUrl": "luz.jpg"
+  },
+  {
+    "precio": 450000,
+    "id": 6,
+    "title": "Carpa Reflex",
+    "thumbnailUrl": "carpa.jpg"
+  }
+]
